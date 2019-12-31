@@ -22,6 +22,7 @@ public class PersonFileFormat extends FileFormat{
 		// Create Map to store the schemas
 		Map<String, FileFormatSchema> schemas = new HashMap<>();
 		
+		String person = "Person";
 		String IDs = "IDs";
 		String DBID = "DBID";
 		String LDBID = "LDBID";
@@ -39,8 +40,9 @@ public class PersonFileFormat extends FileFormat{
 		String version1 = "Version 1.0";
 		List<FormatNode> v1Nodes = new ArrayList<>();
 		
+		// Create the head Node
 		v1Nodes.add(FormatNode.builder()
-								.name(FormatNode.HEAD_NODE)
+								.name(person)
 								.titleRegex("Person")
 								.dataRegex("")
 								.level(0)
@@ -51,7 +53,7 @@ public class PersonFileFormat extends FileFormat{
 								.titleRegex(IDs)
 								.dataRegex("")
 								.level(1)
-								.parentName(FormatNode.HEAD_NODE)
+								.parentName(person)
 								.childName(DBID)
 								.childName(LDBID)
 								.childName(ID)
