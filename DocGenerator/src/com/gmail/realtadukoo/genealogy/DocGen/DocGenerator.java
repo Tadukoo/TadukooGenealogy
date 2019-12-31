@@ -4,6 +4,10 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.math.BigInteger;
 import java.util.List;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 import org.apache.poi.xwpf.usermodel.ParagraphAlignment;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
@@ -13,11 +17,15 @@ import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPageMar;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSectPr;
 
 import com.gmail.realtadukoo.genealogy.api.Defaults;
+import com.gmail.realtadukoo.genealogy.api.files.PersonFileFormat;
 import com.gmail.realtadukoo.genealogy.api.pojos.ChildRelationship;
 import com.gmail.realtadukoo.genealogy.api.pojos.City;
 import com.gmail.realtadukoo.genealogy.api.pojos.Country;
 import com.gmail.realtadukoo.genealogy.api.pojos.County;
 import com.gmail.realtadukoo.genealogy.api.pojos.Date;
+import com.gmail.realtadukoo.genealogy.api.pojos.Date.DateStyle;
+import com.gmail.realtadukoo.genealogy.api.pojos.Date.Month;
+import com.gmail.realtadukoo.genealogy.api.pojos.Date.YearEra;
 import com.gmail.realtadukoo.genealogy.api.pojos.Denomination;
 import com.gmail.realtadukoo.genealogy.api.pojos.Event;
 import com.gmail.realtadukoo.genealogy.api.pojos.Job;
@@ -30,9 +38,6 @@ import com.gmail.realtadukoo.genealogy.api.pojos.Religion;
 import com.gmail.realtadukoo.genealogy.api.pojos.ReligiousBelief;
 import com.gmail.realtadukoo.genealogy.api.pojos.State;
 import com.gmail.realtadukoo.util.BooleanUtil;
-import com.gmail.realtadukoo.genealogy.api.pojos.Date.DateStyle;
-import com.gmail.realtadukoo.genealogy.api.pojos.Date.Month;
-import com.gmail.realtadukoo.genealogy.api.pojos.Date.YearEra;
 
 public class DocGenerator{
 	private static Person person;
@@ -593,6 +598,21 @@ public class DocGenerator{
 		out.close();
 		document.close();
 		
-		System.out.println("Done");
+		System.out.println("Document Done");
+		
+		// Setup the dumb logger
+		File file2 = new File("log.txt");
+		FileHandler fh = new FileHandler("log.txt");
+		SimpleFormatter formatter = new SimpleFormatter();
+        fh.setFormatter(formatter);
+		file2.createNewFile();
+		Logger logger = Logger.getLogger("log.txt");
+		logger.setLevel(Level.FINEST);
+		logger.addHandler(fh);
+		
+		PersonFileFormat personFormat = new PersonFileFormat(logger);
+		personFormat.saveFile(logger, person);
+		
+		System.out.println("Person File Done");
 	}
 }

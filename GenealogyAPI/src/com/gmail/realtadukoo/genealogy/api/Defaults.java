@@ -37,6 +37,12 @@ public class Defaults{
 	private static final Date UNKNOWN_DATE = null;
 	private static final Location UNKNOWN_LOCATION = null;
 	
+	// Unknown Person IDs
+	public static final int UNKNOWN_PERSON_DBID = UNKNOWN_NUM;
+	public static final int UNKNOWN_PERSON_LDBID = UNKNOWN_NUM;
+	public static final String UNKNOWN_PERSON_ID = UNKNOWN;
+	public static final String UNKNOWN_PERSON_OID = UNKNOWN;
+	
 	// Sex Info
 	public static final String UNKNOWN_SEX = UNKNOWN;
 	public static final String MALE = "male";
