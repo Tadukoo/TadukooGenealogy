@@ -604,7 +604,7 @@ public class DocGenerator{
 		File file2 = new File("log.txt");
 		FileHandler fh = new FileHandler("log.txt");
 		SimpleFormatter formatter = new SimpleFormatter();
-        fh.setFormatter(formatter);
+		fh.setFormatter(formatter);
 		file2.createNewFile();
 		Logger logger = Logger.getLogger("log.txt");
 		logger.setLevel(Level.FINEST);
