@@ -11,8 +11,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.gmail.realtadukoo.util</groupId>
-			<artifactId>TadukooFileFormat</artifactId>
+			<groupId>${tadukoo.util.groupId}</groupId>
+			<artifactId>${tadukoo.util.fileformat.artifactId}</artifactId>
 			<version>${tadukoo.util.fileformat.version}</version>
 		</dependency>
 	</dependencies>

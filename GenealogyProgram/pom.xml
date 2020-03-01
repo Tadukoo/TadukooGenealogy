@@ -1,25 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.gmail.realtadukoo.genealogy</groupId>
 		<artifactId>genealogy-parent</artifactId>
 		<version>0.1-Alpha-SNAPSHOT</version>
 	</parent>
-	<artifactId>DocGenerator</artifactId>
-
+	<artifactId>GenealogyProgram</artifactId>
+	
 	<dependencies>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>4.1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>ooxml-schemas</artifactId>
-			<version>1.4</version>
-		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>GenealogyAPI</artifactId>
@@ -27,8 +19,8 @@
 		</dependency>
 		<dependency>
 			<groupId>${tadukoo.util.groupId}</groupId>
-			<artifactId>${tadukoo.util.artifactId}</artifactId>
-			<version>${tadukoo.util.version}</version>
+			<artifactId>${tadukoo.util.view.artifactId}</artifactId>
+			<version>${tadukoo.util.view.version}</version>
 		</dependency>
 	</dependencies>
 
