@@ -14,9 +14,9 @@ import com.gmail.realtadukoo.genealogy.api.Defaults;
  */
 public class Person{
 	/** The database id for the official database */
-	private int DBID;
+	private final int DBID;
 	/** The database id for the local database */
-	private int LDBID;
+	private final int LDBID;
 	/** Also called N#, his/her official ID # */
 	private String ID;
 	/** Also called O#, his/her ID # from an outside source */

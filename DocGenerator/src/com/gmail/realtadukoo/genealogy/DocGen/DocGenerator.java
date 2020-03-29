@@ -230,7 +230,7 @@ public class DocGenerator{
 	
 	private static String formatLocation(Location unknown, Location location){
 		String text = "";
-		if(Defaults.UNKNOWN_BIRTH_LOCATION != location){
+		if(unknown != location){
 			text += " at ";
 			City city = location.getCity();
 			County county = location.getCounty();

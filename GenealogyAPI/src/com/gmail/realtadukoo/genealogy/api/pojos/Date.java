@@ -24,7 +24,7 @@ public class Date{
 		NOVEMBER("November"),
 		DECEMBER("December");
 		
-		private String asText;
+		private final String asText;
 		
 		Month(String asText){
 			this.asText = asText;
