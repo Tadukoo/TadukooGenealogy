@@ -32,7 +32,7 @@ public class City{
 		this.county = county;
 	}
 	
-	public static final CityBuilder builder(){
+	public static CityBuilder builder(){
 		return new CityBuilder();
 	}
 	

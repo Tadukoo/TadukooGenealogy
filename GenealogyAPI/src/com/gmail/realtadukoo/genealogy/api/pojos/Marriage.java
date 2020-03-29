@@ -48,7 +48,7 @@ public class Marriage{
 		this.location = location;
 	}
 	
-	public static final MarriageBuilder builder(){
+	public static MarriageBuilder builder(){
 		return new MarriageBuilder();
 	}
 	

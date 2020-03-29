@@ -14,17 +14,25 @@
 		<module>GenealogyProgram</module>
 	</modules>
 	<properties>
+		<java.source.version>14</java.source.version>
+		<java.target.version>14</java.target.version>
+		
+		<directory.source>src</directory.source>
+		<directory.test>junit</directory.test>
+		<directory.resource>resource</directory.resource>
+		<directory.eclipse.annotationprocessing>.apt_generated</directory.eclipse.annotationprocessing>
+		
 		<tadukoo.util.groupId>com.gmail.realtadukoo.util</tadukoo.util.groupId>
-
+		
 		<tadukoo.util.artifactId>TadukooUtil</tadukoo.util.artifactId>
 		<tadukoo.util.version>0.1-Alpha-SNAPSHOT</tadukoo.util.version>
-
+		
 		<tadukoo.util.database.artifactId>TadukooDatabase</tadukoo.util.database.artifactId>
 		<tadukoo.util.database.version>${tadukoo.util.version}</tadukoo.util.database.version>
-
+		
 		<tadukoo.util.fileformat.artifactId>TadukooFileFormat</tadukoo.util.fileformat.artifactId>
 		<tadukoo.util.fileformat.version>${tadukoo.util.version}</tadukoo.util.fileformat.version>
-
+		
 		<tadukoo.util.view.artifactId>TadukooView</tadukoo.util.view.artifactId>
 		<tadukoo.util.view.version>${tadukoo.util.version}</tadukoo.util.view.version>
 	</properties>

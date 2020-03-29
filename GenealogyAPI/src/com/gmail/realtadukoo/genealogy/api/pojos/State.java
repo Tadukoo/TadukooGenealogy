@@ -40,7 +40,7 @@ public class State{
 		this.country = country;
 	}
 	
-	public static final StateBuilder builder(){
+	public static StateBuilder builder(){
 		return new StateBuilder();
 	}
 	

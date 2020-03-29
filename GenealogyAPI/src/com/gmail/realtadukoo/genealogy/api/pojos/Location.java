@@ -48,7 +48,7 @@ public class Location{
 		this.country = country;
 	}
 	
-	public static final LocationBuilder builder(){
+	public static LocationBuilder builder(){
 		return new LocationBuilder();
 	}
 	

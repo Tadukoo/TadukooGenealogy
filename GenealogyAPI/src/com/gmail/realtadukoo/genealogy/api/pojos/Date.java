@@ -9,7 +9,7 @@ public class Date{
 	private YearEra yearEra;
 	private DateStyle style;
 	
-	public static enum Month{
+	public enum Month{
 		UNKNOWN("?"),
 		JANUARY("January"),
 		FEBRUARY("February"),
@@ -26,7 +26,7 @@ public class Date{
 		
 		private String asText;
 		
-		private Month(String asText){
+		Month(String asText){
 			this.asText = asText;
 		}
 		
@@ -36,14 +36,14 @@ public class Date{
 		}
 	}
 	
-	public static enum DateStyle{
+	public enum DateStyle{
 		OLD_STYLE,
-		NEW_STYLE;
+		NEW_STYLE
 	}
 	
-	public static enum YearEra{
+	public enum YearEra{
 		B_C,
-		A_D;
+		A_D
 	}
 	
 	public static class DateBuilder{

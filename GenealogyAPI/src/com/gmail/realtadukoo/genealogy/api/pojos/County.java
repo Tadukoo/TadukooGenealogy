@@ -32,7 +32,7 @@ public class County{
 		this.state = state;
 	}
 	
-	public static final CountyBuilder builder(){
+	public static CountyBuilder builder(){
 		return new CountyBuilder();
 	}
 	

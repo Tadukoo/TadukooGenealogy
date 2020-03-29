@@ -32,7 +32,7 @@ public class Denomination{
 		this.religion = religion;
 	}
 	
-	public static final DenominationBuilder builder(){
+	public static DenominationBuilder builder(){
 		return new DenominationBuilder();
 	}
 	

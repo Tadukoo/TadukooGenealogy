@@ -73,7 +73,7 @@ public class ReligiousBelief{
 		this.events = events;
 	}
 	
-	public static final ReligiousBeliefBuilder builder(){
+	public static ReligiousBeliefBuilder builder(){
 		return new ReligiousBeliefBuilder();
 	}
 	

@@ -38,7 +38,7 @@ public class Event{
 		this.location = location;
 	}
 	
-	public static final EventBuilder builder(){
+	public static EventBuilder builder(){
 		return new EventBuilder();
 	}
 	

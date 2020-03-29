@@ -32,7 +32,7 @@ public class Country{
 		this.abbreviation = abbreviation;
 	}
 	
-	public static final CountryBuilder builder(){
+	public static CountryBuilder builder(){
 		return new CountryBuilder();
 	}
 	

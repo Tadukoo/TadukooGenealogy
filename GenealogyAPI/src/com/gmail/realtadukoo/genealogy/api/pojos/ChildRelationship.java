@@ -42,7 +42,7 @@ public class ChildRelationship{
 		this.child = child;
 	}
 	
-	public static final ChildRelationshipBuilder builder(){
+	public static ChildRelationshipBuilder builder(){
 		return new ChildRelationshipBuilder();
 	}
 	

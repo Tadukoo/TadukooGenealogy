@@ -24,7 +24,7 @@ public class Religion{
 		this.name = name;
 	}
 	
-	public static final ReligionBuilder builder(){
+	public static ReligionBuilder builder(){
 		return new ReligionBuilder();
 	}
 	

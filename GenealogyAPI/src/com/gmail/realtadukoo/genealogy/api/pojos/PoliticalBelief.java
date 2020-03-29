@@ -48,7 +48,7 @@ public class PoliticalBelief{
 		this.endDate = endDate;
 	}
 	
-	public static final PoliticalBeliefBuilder builder(){
+	public static PoliticalBeliefBuilder builder(){
 		return new PoliticalBeliefBuilder();
 	}
 	

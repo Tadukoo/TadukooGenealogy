@@ -32,7 +32,7 @@ public class PoliticalParty{
 		this.country = country;
 	}
 	
-	public static final PoliticalPartyBuilder builder(){
+	public static PoliticalPartyBuilder builder(){
 		return new PoliticalPartyBuilder();
 	}
 	
