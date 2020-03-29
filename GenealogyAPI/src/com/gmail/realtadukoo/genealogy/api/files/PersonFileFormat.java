@@ -1,9 +1,6 @@
 package com.gmail.realtadukoo.genealogy.api.files;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.logging.Logger;
 
 import com.gmail.realtadukoo.genealogy.api.Defaults;
@@ -262,11 +259,7 @@ public class PersonFileFormat extends FileFormat{
 		String lastName = person.getLastName();
 		Node lastNameNode = new Node(LAST_NAME, lastName, 2, null, null, 
 				middleNameNode != null?middleNameNode:firstNameNode, null);
-		if(middleNameNode != null){
-			middleNameNode.setNextSibling(lastNameNode);
-		}else{
-			firstNameNode.setNextSibling(lastNameNode);
-		}
+		Objects.requireNonNullElse(middleNameNode, firstNameNode).setNextSibling(lastNameNode);
 		
 		// Create the Alive Node
 		Node aliveNode = new Node(ALIVE, String.valueOf(person.isAlive()), 1, null, null, nameNode, null);

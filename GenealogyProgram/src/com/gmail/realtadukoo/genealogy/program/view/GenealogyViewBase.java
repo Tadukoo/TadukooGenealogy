@@ -6,7 +6,6 @@ import com.gmail.realtadukoo.util.view.View;
 import com.gmail.realtadukoo.util.view.ViewBase;
 import com.gmail.realtadukoo.util.view.ViewBaseParams;
 
-@SuppressWarnings("serial")
 public class GenealogyViewBase extends ViewBase{
 	
 	public GenealogyViewBase(){

@@ -1,4 +1,4 @@
-package com.gmail.realtadukoo.genealogy.DocGen;
+package com.gmail.realtadukoo.genealogy.docgen;
 
 import java.io.File;
 import java.io.FileOutputStream;
