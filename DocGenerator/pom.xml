@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.gmail.realtadukoo.genealogy</groupId>
+		<groupId>com.github.tadukoo.genealogy</groupId>
 		<artifactId>genealogy-parent</artifactId>
 		<version>0.1-Alpha-SNAPSHOT</version>
 	</parent>
@@ -25,9 +25,8 @@
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>${tadukoo.util.groupId}</groupId>
-			<artifactId>${tadukoo.util.artifactId}</artifactId>
-			<version>${tadukoo.util.version}</version>
+			<groupId>${tadukoo.util.groupID}</groupId>
+			<artifactId>${tadukoo.util.artifactID}</artifactId>
 		</dependency>
 	</dependencies>
 	<build>

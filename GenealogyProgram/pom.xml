@@ -5,7 +5,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.gmail.realtadukoo.genealogy</groupId>
+		<groupId>com.github.tadukoo.genealogy</groupId>
 		<artifactId>genealogy-parent</artifactId>
 		<version>0.1-Alpha-SNAPSHOT</version>
 	</parent>
@@ -16,10 +16,11 @@
 			<artifactId>GenealogyAPI</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<!-- TODO: Remove OldTadukooView -->
 		<dependency>
-			<groupId>${tadukoo.util.groupId}</groupId>
-			<artifactId>${tadukoo.util.view.artifactId}</artifactId>
-			<version>${tadukoo.util.view.version}</version>
+			<groupId>com.github.tadukoo.util</groupId>
+			<artifactId>OldTadukooView</artifactId>
+			<version>0.1-Alpha-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -45,7 +46,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.gmail.realtadukoo.genealogy.program.TadukooGenealogy</mainClass>
+							<mainClass>com.github.tadukoo.genealogy.program.TadukooGenealogy</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
