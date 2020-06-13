@@ -1,11 +1,18 @@
 package com.github.tadukoo.genealogy.program;
 
-import com.github.tadukoo.genealogy.program.view.GenealogyViewBase;
-import com.github.tadukoo.util.view.old.ViewBase;
+import com.github.tadukoo.engine.Program;
 
-public class TadukooGenealogy{
+import javax.swing.*;
+
+public class TadukooGenealogy implements Program{
 	
-	public static void main(String[] args){
-		ViewBase view = new GenealogyViewBase();
+	@Override
+	public boolean load(){
+		return true;
+	}
+	
+	@Override
+	public void run(){
+		SwingUtilities.invokeLater(() -> new GenealogyMainFrame().setVisible(true));
 	}
 }
