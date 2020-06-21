@@ -7,6 +7,8 @@ public class GenealogyMainFrame extends JFrame{
 	private JLabel label;
 	
 	public GenealogyMainFrame(){
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		
 		panel = new JPanel();
 		add(panel);
 		
